@@ -3,6 +3,7 @@ import { Form } from '@unform/web';
 import Input from './components/Input';
 import { Scope } from '@unform/core'
 import * as Yup from 'yup'
+import { TextField } from '@material-ui/core'
 
 /*
 const initialData = {
@@ -77,6 +78,8 @@ export default function SignIn() {
                 <Input name="street" />
                 <Input name="number" />
             </Scope>
+            <TextField name="texto" label="Teste" defaultValue="oi" />
+            <br />
 
             <button type="submit">Sign in</button>
         </Form>
